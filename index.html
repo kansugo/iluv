@@ -1,151 +1,146 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  body {
-    background: #fff0f3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #594d4d;
-  }
-
-  .heart {
-    color: #ff4d6d;
-    font-size: 50px;
-    animation: pulse 1.5s infinite;
-  }
-
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
-
-  .letter {
-    background: white;
-    width: 80%;
-    max-width: 500px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    margin: 50px 0;
-    line-height: 1.6;
-    border-left: 5px solid #ffb3c1;
-  }
-
-  .box {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .image {
-    background: white;
-    padding: 10px 10px 30px 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transform: rotate(-3deg);
-    transition: 0.3s;
-  }
-
-  .image:hover {
-    transform: rotate(0deg) scale(1.1);
-  }
-
-  .image img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-  button{
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+      body {
+        background: #fff0f3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #594d4d;
+      }
+    
+      .heart {
+        color: #ff4d6d;
+        font-size: 50px;
+        animation: pulse 1.5s infinite;
+      }
+    
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+    
+      .letter {
+        background: white;
+        width: 80%;
+        max-width: 500px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        margin: 50px 0;
+        line-height: 1.6;
+        border-left: 5px solid #ffb3c1;
+      }
+    
+      .box {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+      .image {
+        background: white;
+        padding: 10px 10px 30px 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transform: rotate(-3deg);
+        transition: 0.3s;
+      }
+    
+      .image:hover {
+        transform: rotate(0deg) scale(1.1);
+      }
+    
+      .image img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      button{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-content: center;
+                                        align-items: center;
+                                        font-family:fantasy;
+                                        color:whitesmoke;
+                                        font-weight: bolder;
+                                        font-display: fallback;
+                                        font-style: oblique;
+                                        
+                                        
+                                        
+                                        text-align: center;
+                                        
                                     
-                                    display: flex;
-                                    justify-content: center;
-                                    align-content: center;
-                                    align-items: center;
-                                    font-family:fantasy;
-                                    color:whitesmoke;
-                                    font-weight: bolder;
-                                    font-display: fallback;
-                                    font-style: oblique;
-                                    
-                                    
-                                    
-                                    text-align: center;
-                                    
-                                
-                                }
-
-                                #cute  {
-
-                                    background-image:url(html/0f1ba3323de4711a314119a80205c0bf.jpg);
-                                    background-size: cover;
-                                    width: 690px;
-                                    height: 230px;
-                                    background-repeat: no-repeat;
-                                    border: none;
-                                    font-size: 70px;
-                                    font-weight:900;
-                                    border-radius: 30px;
-                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.658);
-                                text-shadow: 0 0 6px rgba(0, 0, 0, 0.666);
                                     }
-                            #cute:hover {
-                                background-image: url(https://i.pinimg.com/originals/0f/1b/a3/0f1ba3323de4711a314119a80205c0bf.gif);
-                            
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            cursor:pointer;
-                        font-size: 67px;
-                        font-weight:900;
-                            width: 670px;
-                                height: 220px;
-                                border: none;
-                                transition: 60ms;
-                                box-shadow: 0 4px 6px rgb(180, 0, 0);
-                                text-shadow: 0 0 6px rgba(180, 0, 0);
+    
+                                    #cute  {
+    
+                                        background-image:url(html/0f1ba3323de4711a314119a80205c0bf.jpg);
+                                        background-size: cover;
+                                        width: 690px;
+                                        height: 230px;
+                                        background-repeat: no-repeat;
+                                        border: none;
+                                        font-size: 70px;
+                                        font-weight:900;
+                                        border-radius: 30px;
+                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.658);
+                                    text-shadow: 0 0 6px rgba(0, 0, 0, 0.666);
+                                        }
+                                #cute:hover {
+                                    background-image: url(https://i.pinimg.com/originals/0f/1b/a3/0f1ba3323de4711a314119a80205c0bf.gif);
                                 
-
-                            }   
-                            #cute:active {
-                                background-blend-mode: soft-light;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                cursor:pointer;
+                            font-size: 67px;
+                            font-weight:900;
                                 width: 670px;
-                                height: 220px;
-                                font-size: 67px;
-                                font-weight:900;
-                                border: none;
-                            }
-                            body {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                        } 
-</style>
-</head>
-<body>
-
-  <div class="heart">♥</div>
-  <h1>To MY LOVE</h1>
-
-  <div class="letter">
-    <p>my puppy,</p>
-    <p>I wanted to builld this to show you my love towards you...</p>
-    <p>Forever yours, <br> sug</p>
-  </div>
-
-  <div class="box">
-    <div class="image">
-      <img src="images/kan.jpeg" alt="ily">
-      <p>i love you</p>
-    </div>
-    </div>
-<a href="https://cornhub.website" style="text-decoration: none;">
-                            <button id="cute">         WATCH CORN        </button>
-                    </a>
-</body>
-
-</html>
-
+                                    height: 220px;
+                                    border: none;
+                                    transition: 60ms;
+                                    box-shadow: 0 4px 6px rgb(180, 0, 0);
+                                    text-shadow: 0 0 6px rgba(180, 0, 0);
+                                    
+    
+                                }   
+                                #cute:active {
+                                    background-blend-mode: soft-light;
+                                    width: 670px;
+                                    height: 220px;
+                                    font-size: 67px;
+                                    font-weight:900;
+                                    border: none;
+                                }
+                               
+    </style>
+    </head>
+    <body>
+    
+      <div class="heart">♥</div>
+      <h1>To MY LOVE</h1>
+    
+      <div class="letter">
+        <p>my puppy,</p>
+        <p>I wanted to builld this to show you my love towards you...</p>
+        <p>Forever yours, <br> sug</p>
+      </div>
+    
+      <div class="box">
+        <div class="image">
+          <img src="images/kan.jpeg" alt="ily">
+          <p>i love you</p>
+        </div>
+        </div>
+    <a href="https://cornhub.website" style="text-decoration: none;">
+                                <button id="cute">         WATCH CORN        </button>
+                        </a>
+    </body>
+    
+    </html>
+    
+    
